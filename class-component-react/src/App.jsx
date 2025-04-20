@@ -1,11 +1,14 @@
+// App.jsx
+import React, { Component } from "react";
 import Header from "./components/Header";
 import Foodlist from "./components/Foodlist";
 import menu from "./assets/data";
 
-function App() {
-  return (
-    <>
-       <Header />
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Header />
 
         {/* Wrap all Foodlist items in one .foods-container */}
         <div className="foods-container">
@@ -19,9 +22,9 @@ function App() {
             />
           ))}
         </div>
-     
-    </>
-  );
+      </>
+    );
+  }
 }
 
 export default App;
