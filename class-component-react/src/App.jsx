@@ -1,5 +1,5 @@
 // App.jsx
-import React, { Component } from "react";
+import { Component } from "react";
 import Header from "./components/Header";
 import Foodlist from "./components/Foodlist";
 import menu from "./assets/data";
