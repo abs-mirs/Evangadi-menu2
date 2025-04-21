@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class Foodlist extends Component {
   render() {
-    const { img, title, price, desc } = this.props; // ✅ Destructuring here
+    const { img, title, price, desc } = this.props; 
 
     return (
       <div className="single-food">

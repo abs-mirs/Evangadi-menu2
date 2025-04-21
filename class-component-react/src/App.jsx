@@ -10,15 +10,14 @@ class App extends Component {
       <>
         <Header />
 
-        {/* Wrap all Foodlist items in one .foods-container */}
         <div className="foods-container">
-          {menu.map((element) => (
+          {menu.map((food) => (
             <Foodlist
-              key={element.id}
-              img={element.img}
-              title={element.title}
-              price={element.price}
-              desc={element.desc}
+              key={food.id}
+              img={food.img}
+              title={food.title}
+              price={food.price}
+              desc={food.desc}
             />
           ))}
         </div>
