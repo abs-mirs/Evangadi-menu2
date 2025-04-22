@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class Foodlist extends Component {
   render() {
-    const { img, title, price, desc } = this.props; 
+    const { img, title, price, desc } = this.props.food;
 
     return (
       <div className="single-food">
@@ -13,7 +13,7 @@ class Foodlist extends Component {
           <h3>{title}</h3>
           <p>{price}</p>
         </div>
-        <div className="food-desc">{desc}</div>
+        <div className="food-desc">{desc.substring(0, 200)}...</div>
       </div>
     );
   }

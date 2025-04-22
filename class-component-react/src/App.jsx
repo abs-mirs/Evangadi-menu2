@@ -11,14 +11,8 @@ class App extends Component {
         <Header />
 
         <div className="foods-container">
-          {menu.map((food) => (
-            <Foodlist
-              key={food.id}
-              img={food.img}
-              title={food.title}
-              price={food.price}
-              desc={food.desc}
-            />
+          {menu.map((item) => (
+            <Foodlist key={item.id} food={item} />
           ))}
         </div>
       </>
